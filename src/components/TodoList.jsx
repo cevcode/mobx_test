@@ -5,7 +5,7 @@ import { observer } from "mobx-react";
 import Todo from "./Todo";
 
 @observer
-class TodoList extends React.Component {
+class ColumnList extends React.Component {
   @observable newTodoTitle = "";
 
   render() {
@@ -44,4 +44,4 @@ class TodoList extends React.Component {
   };
 }
 
-export default TodoList;
+export default ColumnList;
