@@ -1,6 +1,7 @@
 .column {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .column__column {
@@ -9,5 +10,45 @@
 }
 
 .column__row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column__jc_sb {
+     justify-content: space-between;
+}
+
+.column__jc_fe {
+    justify-content: flex-end;
+}
+
+.column__ai_fe {
+    align-items: flex-end;
+}
+
+.table {
+    max-width: 1250px;
+    display: flex;
+    margin: auto;
+}
+
+.table__item {
+    padding: 10px 5px;
+}
+
+.table__item:nth-child(odd) {
+    background-color: #eee;
+}
+
+h3 {
+    width: 100%;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+h3:last-child {
+    justify-content: flex-end;
     display: flex;
 }

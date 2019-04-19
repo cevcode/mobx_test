@@ -1,27 +1,25 @@
 {
-  "header": {
-    "type": "columns"
-  },
-  "data": [
-    {
-      "id": 1,
-      "text": "column2"
+  "Title": "Clients",
+  "Columns": {
+    "Id": {
+      "caption": "ClientId",
+      "visible": true,
+      "type": "int"
     },
-    {
-      "id": 2,
-      "text": "column2"
+    "FName": {
+      "caption": "First name",
+      "visible": true,
+      "type": "string"
     },
-    {
-      "id": 3,
-      "text": "column2"
+    "LName": {
+      "caption": "Last name",
+      "visible": true,
+      "type": "string"
     },
-    {
-      "id": 4,
-      "text": "column2"
-    },
-    {
-      "id": 5,
-      "text": "column2"
+    "BDate": {
+      "caption": "Birthday",
+      "visible": true,
+      "type": "date"
     }
-  ]
+  }
 }
