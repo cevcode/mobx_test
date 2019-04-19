@@ -1,0 +1,27 @@
+{
+  "header": {
+    "type": "columns"
+  },
+  "data": [
+    {
+      "id": 1,
+      "text": "column2"
+    },
+    {
+      "id": 2,
+      "text": "column2"
+    },
+    {
+      "id": 3,
+      "text": "column2"
+    },
+    {
+      "id": 4,
+      "text": "column2"
+    },
+    {
+      "id": 5,
+      "text": "column2"
+    }
+  ]
+}

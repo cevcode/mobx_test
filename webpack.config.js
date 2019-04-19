@@ -19,10 +19,16 @@ module.exports = {
     extensions: ['.js', '.jsx']
   },
   module: {
-    rules: [{
-      test: /\.jsx?$/,
-      use: ['babel-loader'],
-      include: path.join(__dirname, 'src')
-    }]
+    rules: [
+      {
+        test: /\.jsx?$/,
+        use: ['babel-loader'],
+        include: path.join(__dirname, 'src')
+      },
+      {
+          test: /\.css$/,
+          use: ['style-loader', 'css-loader'],
+      },
+    ]
   }
 };

@@ -1,10 +1,14 @@
 import React from "react";
 import { observer } from "mobx-react";
+import cx from 'classnames';
 
-const Column = observer(({}) => (
-    <div>
+const Column = observer(({ type, data }) => {
+    console.log(data);
+    return (
+    <div className={cx("column", `column__${type}`)}>
         test
     </div>
-));
+    )
+});
 
-export default Column;
+export { Column };

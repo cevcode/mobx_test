@@ -1,0 +1,13 @@
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column__row {
+    display: flex;
+}
