@@ -1,25 +1,28 @@
 import React from "react";
 import { render } from "react-dom";
+import { observer } from "mobx-react/index";
 import DevTools from "mobx-react-devtools";
 
 import ColumnList from "./components/ColumnList";
-import ColumnListModel from "./models/ColumnListModel";
+
 import './style.css';
+import store from './components/ColumnStore';
 import config from './data.json';
 
-const store = new ColumnListModel();
 
-
-class App extends React.Component {
+@observer class App extends React.Component {
     componentDidMount() {
-        this.setState({ data: config });
+        const { store } = this.props;
         store.addColumns(config);
+        store.addColumnsHeader(config);
     }
 
     render() {
         const { store } = this.props;
+        const column = store.getFilteredColumns.map(column => column);
+        const header = store.getColumnHeader.header;
         return (
-            <div><ColumnList store={store} /></div>
+            <ColumnList store={store} />
         );
     }
 }
@@ -35,5 +38,4 @@ render(
 );
 
 
-// playing around in the console
 window.store = store;
